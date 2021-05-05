@@ -1,48 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoption Form</title>
-    <link rel="stylesheet" href="adopt.css">
+    <link rel="stylesheet" href="findHome.css">
+    <title>Find a Home!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+    
+        }
+    
+        html,body {
+            height: 100%;
+            background: url("home.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    
+        .container {
+            height: 100%;
+        }
+        </style>
+
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    html,
-    body {
-        height: 100%;
-        background: url("adopt.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .container {
-        height: 100%;
-        /* background: url("adopt6.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment:fixed;*/
-    }
-</style>
-
 <body>
+    
     <div class="container">
-        <h1>Let's Save A Life !! </h1>
+        <h1>Search for New Parents</h1>
         <div class="main">
             <div class="register">
                 <form action=" ">
                     <h2>Register here</h2>
                     Name: <input type="text" name="myName" required>
-
                     <br><br>
                     Contact number: <input type="text" name="myContactnumber" required>
                     <br><br>
@@ -52,10 +48,13 @@
                     <br><br>
                     Date: <input type="date" name="myDate">
                     <br><br>
-                    Do you own any pet ?:&nbsp;&nbsp; YES <input type="radio" name="mePets">&nbsp;NO <input type="radio"
-                        name="mePets" required>
+                    Age of Dog: <input type="text" name="myAge" required>
                     <br><br>
-                    Message(if any): <textarea name="myMessage" cols="25" rows="5"></textarea>
+                    Breed: <input type="text" name="myBreed" required>
+                    <br><br>
+                    Reason behind finding new parents: <textarea name="myMessage" cols="25" rows="5" required></textarea>
+                    <br><br>
+                    What kind of home are you looking for?: <textarea name="myMessage" cols="25" rows="5" required></textarea>
                     <br><br>
                     <input type="Submit" value="Submit Now">&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="Reset" value="Reset Now">
@@ -63,6 +62,6 @@
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>
